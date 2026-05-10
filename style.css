@@ -208,13 +208,16 @@ button.ghost {
 
 /* Mobile vertical sliding styles */
 @media (max-width: 768px) {
+    body {
+        margin: 30px 0;
+    }
     /* 1. Ensure the container has enough space to show two 50% blocks */
     .container {
         min-height: 100vh !important;
         width: 100% !important;
         display: block; /* Standard block for absolute children */
         position: relative;
-        margin: 30px 20px;
+        overflow: hidden;
     }
 
     /* 2. Style the Forms (Top Half) */
@@ -239,6 +242,10 @@ button.ghost {
         opacity: 0;
         z-index: 1; 
         padding: 20px 0;
+    }
+    
+    .sign-up-container  form {
+        padding: 20px;
     }
 
     /* 3. Style the Overlay (Bottom Half) */
